@@ -28,6 +28,9 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Initialize Android Project Structure
+        run: flutter create . --org com.aigf --platforms android
+
       - name: Install dependencies
         run: flutter pub get
 
